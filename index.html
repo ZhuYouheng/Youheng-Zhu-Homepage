@@ -2,65 +2,71 @@
 <html>
 <head>
 <title>Youheng Zhu Homepage</title>
-<script>
-    MathJax = {
-    tex: {
-    inlineMath: [['$', '$']],
-    displayMath: [['\\[', '\\]']],
-    processEnvironments: true,
-    processRefs: true
-    },
-    options: {
-    skipHtmlTags: ['noscript', 'style', 'textarea', 'pre', 'code'],
-    ignoreHtmlClass: 'tex2jax_ignore',
-    renderActions: {
-    find_script_mathtex: [10, function (doc) {
-    for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
-    const display = !!node.type.match(/; *mode=display/);
-    const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-    const text = document.createTextNode('');
-    node.parentNode.replaceChild(text, node);
-    math.start = { node: text, delim: '', n: 0 };
-    math.end = { node: text, delim: '', n: 0 };
-    doc.math.push(math);
-    }
-    }, '']
-    }
-    },
-    svg: {
-    fontCache: 'global'
-    }
-    };
-    </script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+
 </head>
-<table width="95%" border="1" align="center">
+<table width="1100px" border="1" align="center">
     <tbody>
       <tr align="center">
-          <td style="font-size:20px;color:#000000">
-            <p>无论你欲往何方，伊鲁席尔永在月旁；</p>
-            <p>无论你身在何处，伊鲁席尔仍是故乡。</p>
+          <td style="font-size:15px;color:#000000">
+            <table border="0" width="100%">
+                <tr align="center">
+                    <td>
+                    <i>
+                    <p>无论你欲往何方，伊鲁席尔永在月旁；</p>
+                    <p>无论你身在何处，伊鲁席尔仍是故乡。</p>
+                    </i>
+                    </td>
+                    <td>
+                    <i>
+                    <p>Wherever you go, the moon still sets in Irithyll.</p>
+                    <p>Wherever you may be, Irithyll is your home.</p>
+                    </i>
+                    </td>
+                </tr>
+            </table>
       </tr>
       <tr>
             <td>
               <table border="4" width="100%">
                   <tr align="center">
-                      <td style="font-size:20px;color:#FFFFFF" width="25%"><a style="color:#000000" href="defination.html">恐怖游戏的定义</a></td>
-                      <td style="font-size:20px;color:#FFFFFF" width="30%"><a style="color:#000000" href="origin.html">恐怖游戏的起源和形式必要性</a></td>
-                      <td style="font-size:20px;color:#FFFFFF" width="25%"><a style="color:#000000" href="examples.html">恐怖游戏实例</a></td>
-                      <td style="font-size:20px;color:#FFFFFF" width="20%"><a style="color:#000000" href="features.html">关于我</a></td>
+                      <td style="font-size:20px;color:#FFFFFF" width="25%"><a style="color:#000000" href="defination.html">About</a></td>
+                      <td style="font-size:20px;color:#FFFFFF" width="30%"><a style="color:#000000" href="origin.html">Research Interest</a></td>
+                      <td style="font-size:20px;color:#FFFFFF" width="25%"><a style="color:#000000" href="examples.html">Other</a></td>
+                      <td style="font-size:20px;color:#FFFFFF" width="20%"><a style="color:#000000" href="features.html">Contact</a></td>
                   </tr>
               </table>
           </td>
       </tr>
       <tr>
             <td>
-              <img src="../image/visage1.jpg" alt="Picture of a horror game 'visage'" width="49.4%" />
-              <img src="../image/visage2.jpg" alt="Picture of a horror game 'visage'" width="50%" />
+                <p style="text-indent: 1em;font-size: 30px;" align="left"><b>Education</b></p>
+                <dl style="text-indent: 2em">
+                    <dt>Huazhong University of Science and Technology (HUST)</dt>
+                    <dd><i>Sep. 2021 - now</i></dd>
+                    <dt>Shenzhen Middle School (High School)</dt>
+                    <dd><i>Sep. 2018 - Jun. 2021</i></dd>
+                    <dt>Shenzhen Middle School</dt>
+                    <dd><i>Sep. 2015 - Jun. 2018</i></dd>
+                </dl>
           </td>
       </tr>
+      <tr>
+        <td>
+            <p style="text-indent: 1em;font-size: 30px;" align="left"><b>Selected Honors and Awards</b></p>
+            <dl style="text-indent: 2em">
+                <dt><b>Scholarship of Weichai Power</b>, Weichai Power Corporation, in 2023</dt>
+                <dt><b>Scholarship for Academic Excellence</b>, Huazhong University of Science and Technology, in 2023</dt>
+                <dt><b>Merit Student</b>, Huazhong University of Science and Technology, in 2022</dt>
+                <dd><i>Awarded to top 5% students</i></dd>
+                <dt><b>Scholarship for Rising Stars in Optic Valley</b>, Committee of Wuhan East Lake High-tech Development Zone, in 2022</dt>
+                <dt><b>Bronze Medal at 37<sup>th</sup> Chinese Physics Olympiad (CPhO), Final</b>, the Chinese Physical Society, in 2020</dt>
+                <dt><b>First Price at 37<sup>th</sup> Chinese Physics Olympiad (CPhO), Semi-final</b>, the Chinese Physical Society, in 2020</dt>
+                <dd><i>Rank 5 in Guangdong Province</i></dd>
+                <dt><b>First Price at 36<sup>th</sup> Chinese Physics Olympiad (CPhO), Semi-final</b>, the Chinese Physical Society, in 2019</dt>
+                <dd><i>Rank 13 in Guangdong Province</i></dd>
+            </dl>
+      </td>
+  </tr>
         <tr>
             <td style="font-size:15px;color:#000000" align="center">
                 <p style="text-indent: 2em" align="left">
@@ -71,7 +77,6 @@
                 </p>
                 <p style="text-indent: 2em" align="left">
                     33
-                    $$I(X,Y) = \mathbb{E}_{P_{X,Y}}[\frac{P_{X,Y}}{P_XP_Y}] $$
                 </p>
             </td>
         </tr>
@@ -81,7 +86,7 @@
       <tr align="center">
         <td>
             <table width="10%"><tr align="center"><td>
-            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wKZlXgiyDAJWQ_rZUfPACDUikd8YL2xlKZL9ogebkks&cl=ffffff&w=a"></script>  
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wKZlXgiyDAJWQ_rZUfPACDUikd8YL2xlKZL9ogebkks&cl=ffffff&w=a"></script>
             </td></tr></table>
         </td>
       </tr>
